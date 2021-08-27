@@ -7,6 +7,7 @@
 
 html {
   font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -178,6 +179,12 @@ html {
   font-size: 16px;
   color: #373737;
   line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+  .text--quote {
+    line-height: 1.2;
+  }
 }
 
 .text--link {
@@ -431,6 +438,12 @@ html {
   padding: 20px 10px;
   row-gap: 10px;
   z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+  .card--blog {
+    bottom: -95%;
+  }
 }
 
 .header__wrap {
@@ -927,15 +940,14 @@ html {
 }
 
 .footer__wrap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

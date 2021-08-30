@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,9 +24,20 @@
             </div>
             <div class="header__nav">
                 <ul class="header__navlist">
-                    <li class="header__nav--item"><a class="header__nav--link text--nav" href="#">Layout</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link text--nav text--nav--active" href="#">Layout</a></li>
                     <li class="header__nav--item"><a class="header__nav--link text--nav" href="#">Shop</a></li>
-                    <li class="header__nav--item"><a class="header__nav--link text--nav" href="#">Page</a></li>
+                    <li class="header__nav--item header__nav--item--page"><a class="header__nav--link text--nav" href="#">Page</a>
+                        <ul class="header__droplist">
+                            <li ><a href="./contact.html" class="text--drop">Contact Us</a></li>
+                            <li><a href="" class="text--drop">FAQ</a></li>
+                            <li><a href="" class="text--drop">about Us</a></li>
+                            <li><a href="" class="text--drop">story</a></li>
+                            <li><a href="" class="text--drop">Timeline</a></li>
+                            <li><a href="" class="text--drop">Grid item</a></li>
+                            <li><a href="" class="text--drop">Timeline</a></li>
+                            <li><a href="" class="text--drop">Timeline</a></li>
+                        </ul>
+                    </li>
                     <li class="header__nav--item"><a class="header__nav--link text--nav" href="#">Blog</a></li>
                     <li class="header__nav--item"><a class="header__nav--link text--nav" href="#">Lookbook</a></li>
                 </ul>
@@ -37,16 +50,15 @@
                 <a href=""><img class="header__icon--img" src="./image/menu.svg" alt=""></a>
 
             </div>
-
         </div>
-
     </header>
+        <!--slide section-->
 
-    
         <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide splide__slide--one">
+            <div class="splide__track single-item">
+    
+                
+                    <div class="splide__slide splide__slide--one">
                         <div class="splide__text container">
                             <div class="splide__content ">
                         <h3 class="title title--sub">Perfect Rougue</h3>
@@ -54,10 +66,10 @@
                         <p class="text--slide slide-up">From rosy reds to hot crimson hues, these ultra </p>
                         <p class="text--slide">only from <span>$18.00</span></p>
                         <button class="btn btn--primary btn--primary-t splide__link">shop now</button>
-                          </div>
-                      </div> 
-                    </li>
-                    <li class="splide__slide splide__slide--two">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="splide__slide splide__slide--two">
                         <div class="splide__text container">
                             <div class="splide__content">
                         <h3 class="title title--sub">spring summer 2021</h3>
@@ -65,14 +77,18 @@
                         <p class="text--slide">From rosy reds to hot crimson hues, these ultra </p>
                         <p class="text--slide">only from <span>$18.00</span></p>
                         <button class="btn btn--primary btn--primary-t splide__link">shop now</button>
-                          </div>
-                      </div> 
-                    </li>   
-                </ul>
+                            </div>
+                        </div> 
+                    </div>   
+                
+    
             </div>
         </div>
+    
+                                                         <!--banner section-->
 
         <section class="banner container">
+
             <div class="banner__wrap">
                 <img class="img img--banner" src="./image/banner-h1_1920x.jpg" alt="">
                 <div class="banner__text">
@@ -91,8 +107,9 @@
                     <div class="banner__btn"><button class="btn btn--primary btn--primary-b"  >discover now</button></div>
                 </div>
             </div>
-
         </section>
+
+                                                        <!--feature section-->
 
         <section class="feature">
             <div class="feature__wrap">
@@ -114,24 +131,26 @@
                                     <img class="img img--i " src="./image/eye.svg" alt="">
                                     <img class="img img--i" src="./image/scale.svg" alt="">
                               </div>
+                            </div> 
+                            <p class="text--card"> Restart Detox mask</p>
+
+                            <div class="card__icon">
+                                <div class="card__icon--img">
+                                    <img class="img img--icon" src="./image/star.png" alt="">
+                                    <img class="img img--icon" src="./image/star.png" alt="">
+                                    <img class="img img--icon" src="./image/star.png" alt="">
+                                    <img class="img img--icon" src="./image/star.png" alt="">
+                                    <img class="img img--icon" src="./image/star.png" alt="">
+                                </div>
+                                <p class="text--card">(1)</p>    
                             </div>
-                        
-                        <p class="text--card"> Restart Detox mask</p>
-                        <div class="card__icon">
-                            <div class="card__icon--img">
-                                <img class="img img--icon" src="./image/star.png" alt="">
-                                <img class="img img--icon" src="./image/star.png" alt="">
-                                <img class="img img--icon" src="./image/star.png" alt="">
-                                <img class="img img--icon" src="./image/star.png" alt="">
-                                <img class="img img--icon" src="./image/star.png" alt="">
-                            </div>
-                            <p class="text--card">(1)</p>    
-                        </div>
-                        <p class="text--card"><span>$18.00</span></p>
+                            <p class="text--card"><span>$18.00</span></p>
+
                     </div>
                   
 
                     <div class="card feature__card--col">
+
                         <img class="img" src="./image/20_1_720x.jpg" alt="">
                             <div class="card__two">
                                 <img class="img" src="./image/20_4_540x.jpg" alt="">
@@ -208,8 +227,9 @@
                 </div>
 
             </div>
-
         </section>
+
+        <!--product section-->
 
         <section class="product container">
             <div class="product__wrap">
@@ -423,8 +443,9 @@
                 <div class="banner__btn"><button class="btn btn--primary btn--primary-b"  >view all product</button></div>
 
             </div>
-
         </section>
+
+                                         <!--catagory section-->
 
         <section class="catagory">
             <div class="catagory__col">
@@ -457,6 +478,8 @@
             </div>
      </section>
 
+                                         <!--sponsor section-->
+
    <section class="sponsor">
      <a href=""><img class="img"  src="./image/brand-1_400x.png" alt=""></a>
      <a href=""><img class="img" src="./image/brand-6_400x.png" alt=""></a>
@@ -468,7 +491,7 @@
      <a href=""><img class="img" src="./image/brand-8_400x.png" alt=""></a>  
    </section>
 
-                                                        <!--custome section-->
+                                        <!--custome section-->
 
    <section class="customer">
 
@@ -502,13 +525,12 @@
                                 in the morning, then follow up with a cleanser. It's 
                                 nice that this scrub isn't drying though.”</p>
                         </div>
-
             </div>
-
         </div>
-
      </div>
 </section>
+
+                                <!--blog section-->
 
 <section class="blog container">
 
@@ -527,8 +549,7 @@
                     <h4 class="title__blog title__blog--2">August 26, 2020</h4>
                     <p class="text--content">Baths can improve skin health. Originally you might think that baths would maybe...</p>
                     <a class="text--link" href=""><button class="btn--blog"><p>read more</p> <img class="img--icon" src="./image/next.svg" alt="">  </button></a>
-                   </div>
-                  
+                   </div>                  
             </div>
 
             <div class="blog__content--col blog__content--col-2">
@@ -538,26 +559,28 @@
                 <h4 class="title__blog title__blog--2">August 26, 2020</h4>
                 <p class="text--content">Baths can improve skin health. Originally you might think that baths would maybe...</p>
                 <a class="text--link" href=""><button class="btn--blog"><p>read more</p> <img class="img--icon" src="./image/next.svg" alt="">  </button></a>
-               </div>
-              
-        </div>
+               </div>      
+            </div>
 
-        <div class="blog__content--col blog__content--col-3">
-            <img class="img img--dark" src="./image/blog7_540x.jpg" alt="">
-            <div class="card--blog">
-            <h3 class="title__blog title__blog--1">5 Benefits of Taking bath</h3>
-            <h4 class="title__blog title__blog--2">August 26, 2020</h4>
-            <p class="text--content">Baths can improve skin health. Originally you might think that baths would maybe...</p>
-            <a class="text--link" href=""><button class="btn--blog"><p>read more</p> <img class="img--icon" src="./image/next.svg" alt="">  </button></a>
+            <div class="blog__content--col blog__content--col-3">
+                <img class="img img--dark" src="./image/blog7_540x.jpg" alt="">
+                <div class="card--blog">
+                <h3 class="title__blog title__blog--1">5 Benefits of Taking bath</h3>
+                <h4 class="title__blog title__blog--2">August 26, 2020</h4>
+                <p class="text--content">Baths can improve skin health. Originally you might think that baths would maybe...</p>
+                <a class="text--link" href=""><button class="btn--blog"><p>read more</p> <img class="img--icon" src="./image/next.svg" alt="">  </button></a>
            </div>
-          
-    </div>
+           </div>
+
         </div>
     </div>
-
 </section>
 
+                                <!--gallery section-->
+
+
 <section class="gallery">
+
     <div class="gallery__col">
         <img class="img gallery__img" src="./image/insta1.jpg" alt=""> 
         <div class="gallery__img--sub" ><i class="icon--i fab fa-instagram"></i>
@@ -591,50 +614,58 @@
 
 </section>
 
-<section class="footer container">
-    <div class="footer__wrap">
-        <div class="footer__col">
-            <h4 class="tittle--footer">News Letter</h4>
-            <p class=" text--footer">Get free <strong>30%</strong> discount for all products on your <br>first order </p>
-            <div><form class="form" action="">
-                <input class="form__input" type="email" id="email" name="email" value="Your Email">
-                <input class="btn btn--primary btn--primary-b btn--primary-f"   type="submit">
-            </form></div>
-        </div>
-        <div class="footer__col">
-            <h4 class="tittle--footer">Ask Your Question</h4>
-            <p class=" text--footer">You have questions that need our expert <br>
-                answer! please, call in.   
-            </p>
-            <a class="text--link text--footer " href="">
-                <i class="icon fas fa-phone-alt"></i>
-                <p class="text--footer-s"><strong>0035265244</strong></p>
+                            <!--footer section-->
 
-            </a>
+    <section class="footer container">
+        <div class="footer__area">
+        <div class="footer__wrap">
+            <div class="footer__col">
+                <h4 class="tittle--footer">News Letter</h4>
+                <p class=" text--footer">Get free <strong>30%</strong> discount for all products on your <br>first order </p>
+                <div><form class="form" action="">
+                    <input class="form__input" type="email" id="email" name="email" value="Your Email">
+                    <input class="btn btn--primary btn--primary-b btn--primary-f"   type="submit">
+                </form></div>
+            </div>
+            <div class="footer__col">
+                    <h4 class="tittle--footer">Ask Your Question</h4>
+                    <p class=" text--footer">You have questions that need our expert <br>
+                        answer! please, call in.   
+                    </p>
+                    <a class="text--link text--footer " href="">
+                        <i class="icon fas fa-phone-alt"></i>
+                        <p class="text--footer-s"><strong>0035265244</strong></p>
+                    </a>
+            </div>
+            <div class="footer__col">
+                <h4 class="tittle--footer">Address Office</h4>
+                <p class="text--footer">contact-name-email@example.com</p>
+                <p class="text--footer">National Park, AZ 86028, United States</p>
+                <ul class="footer__list">
+                    <li class="footer__list--item"><i class="icon fab fa-facebook"></i></li>
+                    <li class="footer__list--item"><i class="fab fa-twitter icon"></i></li>               
+                    <li class="footer__list--item"><i class="fab fa-pinterest icon"></i></li>
+                    <li class="footer__list--item"><i class="fab fa-instagram icon"></i></li>
+                    <li class="footer__list--item"><i class="fab fa-youtube icon"></i></li>
+                </ul>
+            </div>
+            
         </div>
-        <div class="footer__col">
-            <h4 class="tittle--footer">Address Office</h4>
-            <p class="text--footer">contact-name-email@example.com</p>
-            <p class="text--footer">National Park, AZ 86028, United States</p>
-            <ul class="footer__list">
-                <li class="footer__list--item"><i class="icon fab fa-facebook"></i></li>
-                <li class="footer__list--item"><i class="fab fa-twitter icon"></i></li>
-               
-                <li class="footer__list--item"><i class="fab fa-pinterest icon"></i></li>
-                <li class="footer__list--item"><i class="fab fa-instagram icon"></i></li>
-                <li class="footer__list--item"><i class="fab fa-youtube icon"></i></li>
-            </ul>
-        </div>
+        <hr>
+    </div>
+    </section>
+
+<section class="end ">
+    <div class="end__text container">
+        <p>This website uses cookies to ensure you get the best experience on our website. <a  class="text--link--d" href=""> Learn More </a></p>
+        <button class="btn btn--primary btn--primary-b btn--primary-f">Got it </button>
 
     </div>
-
 </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '.splide' ).mount();
-        } );
-    </script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
 </body>
 </html>

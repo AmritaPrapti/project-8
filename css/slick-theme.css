@@ -91,13 +91,15 @@
 .slick-prev:before
 {
     content: '<';
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
     color: black;
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '>';
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .slick-next
@@ -112,13 +114,15 @@
 .slick-next:before
 {
     content: '>';
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
     color: black;
 }
 [dir='rtl'] .slick-next:before
 {
     content: '<';
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* Dots */

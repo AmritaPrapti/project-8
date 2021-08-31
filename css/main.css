@@ -13,7 +13,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px 30px;
+  padding: 0 30px;
 }
 
 .title {
@@ -332,7 +332,6 @@ html {
 }
 
 .btn {
-  border: none;
   text-transform: uppercase;
   padding: 12px 32px;
   font-weight: 600;
@@ -353,11 +352,11 @@ html {
 }
 
 .btn--primary:hover {
-  -webkit-box-shadow: inset 10rem 0 #f4a678;
-          box-shadow: inset 10rem 0 #f4a678;
+  -webkit-box-shadow: inset 11rem 0 #f4a678;
+          box-shadow: inset 11rem 0 #f4a678;
   cursor: pointer;
   color: #ffffff;
-  border: none;
+  border: 1px solid #f4a678;
 }
 
 .btn--primary-t {
@@ -366,6 +365,11 @@ html {
   color: #ffffff;
   -webkit-animation: slide__up 2s ease;
           animation: slide__up 2s ease;
+}
+
+.btn--primary-t:hover {
+  -webkit-box-shadow: inset 7.2rem 0 #f4a678;
+          box-shadow: inset 7.2rem 0 #f4a678;
 }
 
 .btn--primary-b {
@@ -554,7 +558,6 @@ html {
 
 .header {
   position: relative;
-  padding: 0 !important;
 }
 
 .header__wrap {
@@ -573,9 +576,21 @@ html {
   padding: 0px 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+
 .header__nav--item {
   display: inline-block;
   padding: 30px;
+}
+
+@media screen and (max-width: 1075px) {
+  .header__nav--item {
+    padding: 30px 15px;
+  }
 }
 
 .header__nav--item--page {
@@ -604,6 +619,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px;
 }
 
 .header__icon--img {
@@ -1047,6 +1063,16 @@ html {
   padding: 40px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
 .footer__col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,6 +1140,7 @@ html {
   bottom: 0;
   z-index: 9999999;
   width: 100%;
+  padding: 10px 0px;
 }
 
 .end__text {
@@ -1159,6 +1186,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f4f1eb;
+  padding: 20px 0px;
 }
 
 .contact__text {

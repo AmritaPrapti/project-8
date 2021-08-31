@@ -21,7 +21,7 @@ html{
 .container{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: 0 30px;
 }
 
 .title{
@@ -303,7 +303,7 @@ html{
 }
 
 .btn{
-    border: none;
+   
     text-transform: uppercase;
     padding: 12px 32px;
     font-weight: 600;
@@ -322,10 +322,10 @@ html{
         background-color: transparent;
 
        &:hover {
-            box-shadow: inset 10rem 0 $color-hover;
+            box-shadow: inset 11rem 0 $color-hover;
             cursor: pointer;
             color: $color-primary;
-            border: none;
+            border: 1px solid $color-hover;
                  
        }
     }
@@ -334,6 +334,11 @@ html{
         background-color: transparent;
         color: $color-primary;
         animation: slide__up 2s ease;
+
+        &:hover{
+            
+            box-shadow: inset 7.2rem 0 $color-hover;
+        }
     }
 
     &--primary-b{
@@ -462,25 +467,37 @@ html{
 
 .header{
 
-    position: relative;
-    padding: 0 !important;
+    position: relative;  
+    
 
     &__wrap{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+       
         
     }
     &__nav{
         padding: 0px 20px; 
+       
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
 
     &--item{
         display: inline-block;
         padding:30px; 
 
+        @media screen and (max-width:1075px){
+            padding: 30px 15px;
+        }
+
         &--page{
             position: relative;
-            transition: all 3s ease;
+            transition: all 3s ease; 
+            
             &:hover .header__droplist{
                 display: flex;
                 flex-direction: column;
@@ -493,6 +510,7 @@ html{
         display: flex;
         column-gap: 20px;
         align-items: center;
+        padding:30px; 
         &--img{
             width: 25px;
         }
@@ -802,6 +820,11 @@ html{
         align-items: center;
         margin-top: 40px;
         padding: 40px 0;
+         @media screen and (max-width:768px) {
+             display: grid;
+             grid-template-columns: 1fr 1fr ;
+             grid-gap: 20px;
+         }
     
     }
     &__col{
@@ -862,6 +885,7 @@ html{
     bottom: 0;
     z-index: 9999999;
     width: 100%;
+    padding: 10px 0px;
    
 
     &__text{
@@ -887,6 +911,7 @@ html{
     display: flex;
     align-items: center;
     background-color: #f4f1eb;
+    padding: 20px 0px;
 }
 
 .contact{
